@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>Jovian Drift SOS</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <iframe id="bg-frame" src="../styles/effect.html"></iframe>
+    <!-- Phase 2: Pilot Credentials (Fieldset 1) -->
+    <form action="#">
+        <fieldset>
+            <legend>Pilot Credentials</legend>
+            <label for="pilot-name">Pilot Name:</label>
+            <input type="text" placeholder="Enter name" id="pilot-name" required>
+            <label for="userPassword">Access Code:</label>
+            <input type="password" name="access_code" id="userPassword" required>
+            <label for="userEmail">Command Email:</label>
+            <input type="email" name="email" id="userEmail" required>
+        </fieldset>
+        <!-- Phase 3: Vessel Diagnostics (Fieldset 2) -->
+        <fieldset>
+            <legend>Vessel Diagnostics</legend>
+            <label for="percant">Hull Damage (%):</label>
+            <input type="number" name="hull_damage" id="percant" required>
+            <label for="emergency">Emergency Level:</label>
+            <select name="select_element" id="emergency" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </fieldset>
+        <!-- Phase 4: Mission Log & Evidence (Fieldset 3) -->
+        <fieldset>
+            <legend>Mission Log & Evidence</legend>
+            <label for="sos_message">SOS MEssage:</label>
+            <textarea name="" id="sos_message" rows="3" required></textarea>
+            <div class="container">
+                <input type="checkbox" id="quarantine" required>
+                <label for="quarantine">I agree to quarantine protocols</label>
+            </div>
+        </fieldset>
+        <button type="submit">INITIATE TRANSMISSION</button>
+        <button type="reset">RESET SYSTEM</button>
+    </form>
+
+    <script src="../scripts/launch.js"></script>
+</body>
+
+</html>
